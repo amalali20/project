@@ -1,0 +1,89 @@
+*{
+    direction: rtl;
+}
+
+/* Styleing navbar */
+header {
+    width: 100%;
+    height: 25vb;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 5px 5px 15px gray;
+    z-index: 3;
+  }
+  header img {
+    width: 250px;
+    margin-left: 60px;
+  }
+  header .navStyle a {
+    margin-left: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+  }
+  header .navStyle a:hover {
+    text-decoration: underline;
+    color: #02598B;
+  }
+  header .navStyle button {
+    margin-right: 15px;
+    border-radius: 5px;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    background-color: #02598B;
+    color: white;
+  }
+
+/* style form */
+form{
+    position: relative;
+    top: 130px;
+    background-color: #e1eef3;
+    border: 1px solid #026a90;
+    border-radius: 10px;
+    width: 45%;
+    margin-right: 27%;
+    margin-top: 50px;
+    padding:10px 20px;
+}
+
+form .btns {
+    width: 25%;
+    padding: 10px;
+    margin:10px;
+    background-color: #02598B;
+    border-radius: 10px;
+    color: white;
+}
+
+.errorSpan{
+    color: #026a90;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* 
+form
+width: 45%
+padding: 20px 
+border-radius: 10px
+box-shadow: 0px 2px 8px gray
+font-size: $fontSize
+font-weight: bold
+input , textarea
+    background-color: #CDE2DF
+    width: 80%
+input, label, textarea, button
+    margin-right: 10%
+#btn
+    background-color: $altColor
+    border-radius: 5px
+    width: 150px
+    padding: 10px
+    border: none
+    color: white */

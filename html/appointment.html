@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>appointment Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+
+    <link rel="stylesheet" href="../bootstrap/Css/all.min.css">
+    <link rel="stylesheet" href="../bootstrap/Css/bootstrap-icons.css">
+    <link rel="stylesheet" href="../bootstrap/Css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/Css/normalize.css">
+
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <!-- start header -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html"><img src="../images/Logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body navStyle">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link "  href="home.html" id="a1">الرئيسية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html" id="a2">معلومات عنا</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="cli.html" id="a3">العيادات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="doctor.html" id="a4">الأطباء</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="health.html" id="a5">مقالات صحية </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="contact.html" id="a6">تواصل معنا</a>
+                            </li>
+                            </ul>
+                            <div>
+                                <button id="btnn5">موعد</button>
+                            </div> 
+                            <div>
+                                <a href="index.html">
+                                    <img src="../images/contact.png" alt="">
+                                </a>
+                            </div>
+                </div>
+            </div>
+        </nav>
+    </header> 
+<!-- end header -->
+
+    <section class="sec1">
+        <form action="">
+            <div class="mb-3 ">
+                <label for="clinic">اختار العيادة</label>
+                <select name="العيادة" id="clinic">
+                    <option value="القلب والصدر" id="op1">جراحة القلب والصدر </option>
+                    <option value="أمراض الجهاز الهضمي والكبد" id="op2"> أمراض الجهاز الهضمي والكبد</option>
+                    <option value="جراحة العظام" id="op3"> جراحة العظام</option>
+                    <option value="طب الأطفال" id="op4">طب الأطفال</option>
+                    <option value="النساء والتوليد" id="op5"> النساء والتوليد</option>
+                    <option value="الأنف والأذن والحنجرة" id="op6">  الأنف والأذن والحنجرة</option>
+                    <option value="طب المخ والأعصاب" id="op7">طب المخ والأعصاب </option>
+                    <option value="العلاج الطبيعي" id="op8"> العلاج الطبيعي </option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="doctor">اختارالطبيب</label>
+                <select name="الطبيب" id="doctor">
+                    <option value="دكتور/ احمد عبده ">دكتور/ احمد عبده </option>
+                    <option value="دكتور/ ماجد زكرى">دكتور/ ماجد زكرى</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="ادخل اسمك بالكامل" id="useName">
+                <span class="errorSpan"></span>
+            </div>
+
+            <div class="mb-3">
+                <input type="number" class="form-control" placeholder="ادخل عمرك" id="age">
+                <span class="errorSpan"></span>
+            </div>
+
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="ادخل رقم الهاتف" id="phone">
+                <span class="errorSpan"></span>
+            </div>
+
+            <div class="mb-3">
+                <input type="email" class="form-control" id="email" placeholder="ادخل البريدالالكترونى">
+                <span class="errorSpan"></span>
+            </div>
+
+            <div class="mb-3">
+                <input type="text" class="form-control" id="address" placeholder="ادخل عنوانك">
+                <span class="errorSpan"></span>
+            </div>
+
+            <div class="mb-3">
+                <input type="button" value="حجز موعد" id="sendBtn">
+            </div>
+        </form>
+
+        <div>
+            <img src="../images/app.avif" alt="">
+        </div>
+    </section>
+    <!-- start footer -->
+    <footer>
+        <div class="container">
+            <div class="col1">
+                <img src="../images/Logo.png" alt="">
+                <p>عياداتنا هي الرائدة في مصر في مجال الرعاية الصحية، حيث تقدم أفضل مستوى من الرعاية الصحية للمرضى ونسعى لتثقيف المرضى لزيادة الوعي لديهم للوقاية من الأمراض المحتملة.</p>
+                <div>
+                    <a href="https://www.facebook.com/">
+                        <img src="../images/face.svg" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/">
+                        <img src="../images/in.svg" alt="">
+                    </a>
+                    <a href="https://twitter.com/">
+                        <img src="../images/tew.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col2">
+                <h2>روابط مهمة</h2>
+                <ul>
+                    <li> <a href="about.html">حول عياداتنا </a> </li>
+                    <li> <a href="clinic.html">العيادات</a> </li>
+                    <li> <a href="">الأطباء</a> </li>
+                    <li> <a href="">مقالات طبية</a> </li>
+                    <li> <a href="">تواصل معنا</a> </li>
+                </ul>
+            </div>
+
+            <div class="col4">
+                <h2>تواصل معنا</h2>
+                <ul>
+                    <li><span>الهاتف</span> <br> <a href="https://web.whatsapp.com/">
+                        +555 666 24</a> </li>
+                    <li><span>البريد الإلكتروني</span> <a href="https://mail.google.com/">info@ourclinics.com</a> </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../bootstrap/Js/bootstrap.bundle.min.js"></script> 
+    <script src="../javaScript/app.js"></script>
+</body>
+</html>

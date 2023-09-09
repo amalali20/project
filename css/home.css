@@ -1,0 +1,502 @@
+* {
+  direction: rtl;
+}
+
+/* Styleing navbar */
+header {
+  width: 100%;
+  height: 25vb;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 5px 5px 15px gray;
+  z-index: 3;
+}
+header img {
+  width: 250px;
+  margin-left: 60px;
+}
+header .navStyle a {
+  margin-left: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+header .navStyle a:hover {
+  text-decoration: underline;
+  color: #02598B;
+}
+header .navStyle .on {
+  text-decoration: underline;
+  color: #02598B;
+}
+header .navStyle button {
+  margin-right: 15px;
+  border-radius: 5px;
+  width: 150px;
+  padding: 10px;
+  border: none;
+  background-color: #02598B;
+  color: white;
+}
+header .navStyle img {
+  width: 60px;
+}
+
+/*Styleing section 1*/
+.sec1 {
+  position: relative;
+  top: 150px;
+}
+.sec1 .slider {
+  width: 100%;
+  background-image: url("../images/back1.webp");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #02598B;
+  padding: 10px;
+}
+.sec1 .slider div {
+  width: 100%;
+}
+.sec1 .slider div h2 {
+  margin-top: 50px;
+  margin-right: 20%;
+}
+.sec1 .slider div .center {
+  margin-top: 20px;
+  width: 100%;
+  padding-right: 20%;
+}
+.sec1 .slider div .center h5 {
+  margin-bottom: 40px;
+}
+.sec1 .cards {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: calc(100% - 30px);
+  top: 170px;
+}
+.sec1 .cards img {
+  width: 100px;
+  padding: 10px;
+}
+.sec1 .cards .card {
+  width: calc(27% - 5px);
+  background-color: #C9E1F7;
+  color: #02598B;
+  padding-top: 15px;
+}
+.sec1 .cards .card h4 {
+  font-weight: 600;
+}
+.sec1 .cards .card p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  .sec1 .slider > div h2 {
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+  .sec1 .slider > div .center {
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+  .sec1 .cards {
+    top: 160px;
+    flex-wrap: wrap;
+  }
+  .sec1 .cards .card {
+    width: calc(100% - 130px);
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .sec1 .cards {
+    top: 180px;
+  }
+  .sec1 .cards .card {
+    margin-bottom: 10px;
+  }
+}
+
+/*Styleing section 2*/           
+.sec2 {
+  position: relative;
+  top: 400px;
+}
+.sec2 .container {
+  display: flex;
+  justify-content: space-between;
+}
+.sec2 .container div {
+  font-weight: bold;
+  width: 50%;
+}
+.sec2 .container div img {
+  margin-top: 50px;
+  width: 100%;
+}
+.sec2 .container div h4 {
+  margin-top: 40px;
+  color: #02598B;
+  font-weight: bold;
+}
+.sec2 .container div p {
+  width: 100%;
+  margin-top: 5px;
+}
+.sec2 .container div button {
+  margin-top: 10px;
+  margin-right: 30%;
+  border-radius: 5px;
+  width: 150px;
+  padding: 10px;
+  border: none;
+  background-color: #02598B;
+  color: white;
+}
+@media (max-width: 767px) {
+  .sec2 {
+    top: 800px;
+  }
+  .sec2 .container {
+    flex-direction: column;
+  }
+  .sec2 .container div {
+    width: calc(100% - 10px);
+  }
+  .sec2 .container div p {
+    font-size: 15px;
+  }
+  .sec2 .container div button {
+    margin-right: 0px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .sec2 {
+    top: 410px;
+  }
+  .sec2 .container > div img {
+    margin-top: 80px;
+    margin-right: 10px;
+  }
+  .sec2 .container > div p {
+    font-size: 14px;
+  }
+  .sec2 .container > div button {
+    margin-right: 0px;
+  }
+}
+
+/*Styleing section 3*/
+.sec3 {
+  position: relative;
+  top: 450px;
+  background-color: #F9F5F7;
+  display: flex;
+  justify-content: space-between;
+}
+.sec3 .div1 {
+  width: 48%;
+  margin-top: 20px;
+}
+.sec3 .div1 h1 {
+  color: #02598B;
+  font-weight: bold;
+  text-align: center;
+}
+.sec3 .div1 div {
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+.sec3 .div1 div h5 {
+  border-bottom: 1px solid gray;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+.sec3 .div1 div h5:hover {
+  color: #02598B;
+}
+.sec3 .div2 {
+  width: 48%;
+}
+.sec3 .div2 img {
+  width: 100%;
+  margin-top: 50px;
+}
+@media (max-width: 767px) {
+  .sec3 {
+    top: 850px;
+    flex-direction: column;
+    background-size: contain;
+    margin-top: 30px;
+  }
+  .sec3 .div2, .sec3 .div1 {
+    width: calc(90% - 20px);
+  }
+  .sec3 .div2 {
+    margin: 5%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .sec3 {
+    top: 400px;
+    flex-direction: column;
+    background-size: contain;
+    margin-top: 30px;
+  }
+  .sec3 .div2, .sec3 .div1 {
+    width: calc(90% - 25px);
+  }
+  .sec3 .div2 {
+    margin-right: 5%;
+  }
+}
+
+/*styleing section 4*/
+.sec4 {
+  position: relative;
+  top: 500px;
+}
+.sec4 .divs {
+  width: 100%;
+  display: flex;
+}
+.sec4 .divs h5, .sec4 .divs h3 {
+  color: #02598B;
+  font-weight: bold;
+}
+.sec4 .divs .d1 {
+  width: 50%;
+  background-color: #F9F5F7;
+  background-size: cover;
+  padding: 30px 25px;
+  height: 45vb;
+}
+.sec4 .divs .d1 p {
+  width: 90%;
+  padding-top: 10px;
+}
+.sec4 .divs .d1 a {
+  background-color: #02598B;
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 50%;
+  text-decoration: none;
+  color: white;
+}
+.sec4 .divs .d1 a:hover {
+  opacity: 0.7;
+}
+.sec4 .divs .d2 {
+  position: absolute;
+  right: 43%;
+  width: 50%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.sec4 .divs .d2 .card {
+  width: 32%;
+}
+@media (max-width: 767px) {
+  .sec4 {
+    top: 850px;
+  }
+  .sec4 .divs {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .sec4 .divs .d1, .sec4 .divs .d2 {
+    width: 100%;
+  }
+  .sec4 .divs .d2 {
+    right: 0px;
+    top: 180px;
+    justify-content: space-around;
+  }
+  .sec4 .divs .d2 .card {
+    width: 28%;
+  }
+}
+
+/*styleing section 5*/
+.sec5 {
+  position: relative;
+  top: 550px;
+}
+.sec5 .divs {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.sec5 .divs h5, .sec5 .divs h3 {
+  color: #02598B;
+  font-weight: bold;
+}
+.sec5 .divs .d1 {
+  width: 50%;
+  background-color: #F9F5F7;
+  background-size: cover;
+  padding: 30px 25px;
+  height: 45vb;
+  position: absolute;
+  left: 0%;
+  padding-right: 7%;
+}
+.sec5 .divs .d1 p {
+  width: 90%;
+  padding-top: 10px;
+}
+.sec5 .divs .d1 a {
+  background-color: #02598B;
+  padding: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+}
+.sec5 .divs .d1 a:hover {
+  opacity: 0.7;
+}
+.sec5 .divs .d2 {
+  position: absolute;
+  right: 4%;
+  width: 50%;
+  margin-top: 20px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.sec5 .divs .d2 .card {
+  width: 33%;
+}
+.sec5 .divs .d2 .card img {
+  width: 100%;
+  height: 55%;
+}
+@media (max-width: 767px) {
+  .sec5 {
+    top: 1000px;
+  }
+  .sec5 .divs {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .sec5 .divs .d1, .sec5 .divs .d2 {
+    width: 100%;
+  }
+  .sec5 .divs .d2 {
+    right: 0px;
+    top: 180px;
+    justify-content: space-around;
+  }
+  .sec5 .divs .d2 .card {
+    width: 28%;
+  }
+}
+
+/*Styleing section 6*/
+.sec6 {
+  position: relative;
+  top: 950px;
+  height: 60vb;
+  background-image: url("../images/7.webp");
+}
+.sec6 div {
+  color: white;
+  width: 700px;
+  font-size: fontSize;
+  padding-top: 100px;
+  padding-right: 10%;
+}
+.sec6 button {
+  border-radius: 5px;
+  width: 150px;
+  padding: 10px;
+  border: none;
+  margin: 3% 20%;
+}
+@media (max-width: 767px) {
+  .sec6 {
+    top: 1590px;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  .sec6 div {
+    width: calc(60% - 10px);
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .sec6 {
+    top: 950px;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  .sec6 div {
+    width: calc(60% - 10px);
+  }
+}
+
+/*Styleing footer*/       
+footer {
+  position: relative;
+  top: 980px;
+  background-color: black;
+  color: #c8c2c5;
+}
+footer .container {
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .container .col1 {
+  width: 32%;
+}
+footer .container .col1 img {
+  width: 190px;
+}
+footer .container .col1 div a {
+  text-decoration: none;
+}
+footer .container .col1 div img {
+  margin-right: 10px;
+  width: 30px;
+}
+footer .container .col2, footer .container .col4 {
+  margin-right: 20px;
+  width: 32%;
+}
+footer .container .col2 h2, footer .container .col4 h2 {
+  margin-top: 80px;
+  width: 250px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #02598B;
+}
+footer .container .col2 ul, footer .container .col4 ul {
+  margin-top: 50px;
+  list-style-type: none;
+}
+footer .container .col2 ul a, footer .container .col4 ul a {
+  text-decoration: none;
+  color: gray;
+}
+footer .container .col2 ul a:hover, footer .container .col4 ul a:hover {
+  text-decoration: underline;
+  color: white;
+}
+footer .container .col4 ul > li > span {
+  color: #02598B;
+}
+@media (max-width: 767px) {
+  footer {
+    top: 1700px;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

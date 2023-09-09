@@ -1,0 +1,144 @@
+// import mixins
+@use './mixins/__mx.sass' as *
+
+$style :''
+$mainColor: white
+$altColor: #02598B
+$secondColor: black
+$fontSize: 15px
+
+*
+    direction: rtl
+    margin: 0px
+
+/* Styleing navbar */
+header
+    width:100%
+    height: 25vb
+    background-color: $mainColor
+    position: fixed
+    top: 0px
+    font-size: $fontSize
+    display: flex
+    justify-content: space-around
+    box-shadow: 5px 5px 15px gray
+    z-index: 3
+    img
+        width: 250px
+        margin-left: 60px
+    .navStyle
+        a
+            margin-left: 5px
+            font-weight: bold
+            @include styleLinks('normal', $secondColor)
+            &:hover
+                @include styleLinks('hover', $altColor)
+        .on
+             @include styleLinks('hover', $altColor)
+        button
+            margin-right: 15px
+            @include styleButton('blue',  $altColor , $mainColor)
+        img 
+            width: 60px
+
+.head
+    position: relative
+    width:100%
+    top: 180px
+    >div
+        width: 40%
+        font-size: 30px
+        margin-right: 10px
+        font-weight: bold
+        color: $altColor
+        padding-right: 50px
+
+
+/*style sec1*/
+.container
+    position: relative
+    top: 200px
+    width: 100%
+    .div1
+        display: flex
+        margin-bottom: 30px
+        justify-content: space-between
+        width: 100%
+        font-size: $fontSize
+        font-weight: bold
+        a
+            text-decoration: none
+            margin-right: 10%
+            @include styleButton ('blue', $altColor, $mainColor)
+            padding: 7px 25px
+        div
+            width: calc(50% - 5px)
+            position: relative
+            h4, h6
+                color: $altColor
+                font-weight: bold
+            img
+                width: calc(95%)
+                &:hover
+                    transform: scale(1.15)
+            p
+                width: calc(95% - 5px)    
+       
+    @media(min-width: 992px)
+        .div2
+            position: absolute
+            right: 52%     
+        .img1  
+            position: absolute
+            left: 52%
+    
+    @media(max-width: 991px)
+        .div1
+            flex-direction: column
+            div, .div2, .img1
+                width: calc(100%)
+
+
+/*Styleing footer*/       
+
+.contain
+    position: relative
+    top: 300px
+    color: #c8c2c5
+    background-color: $secondColor
+    display: flex
+    justify-content: space-evenly
+    width: 100%
+    .col1
+        width: 32%
+        img
+            width: 190px
+        div
+            a
+                text-decoration: none
+            img
+                margin-right: 10px
+                width: 30px
+    
+    .col2 , .col4
+        margin-right: 20px
+        width: 32%
+        h2
+            margin-top: 80px
+            width: 250px
+            padding-bottom: 10px
+            border-bottom: 3px solid $altColor
+        ul
+            margin-top: 50px
+            list-style-type: none
+            a
+                @include styleLinks('normal', gray)
+                
+                &:hover
+                    @include styleLinks('hover', $mainColor)
+    
+    .col4
+        ul > li > span
+            color: $altColor
+    @media(max-width:991)
+        top: 300px

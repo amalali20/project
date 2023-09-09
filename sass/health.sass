@@ -1,0 +1,170 @@
+// import mixins
+@use './mixins/__mx.sass' as *
+
+$style :''
+$mainColor: white
+$altColor: #02598B
+$secondColor: black
+$fontSize: 16px
+
+*
+    direction: rtl
+
+
+/* Styleing navbar */
+header
+    width:100%
+    height: 25vb
+    background-color: $mainColor
+    position: fixed
+    top: 0px
+    font-size: 18px
+    display: flex
+    justify-content: space-around
+    box-shadow: 5px 5px 15px gray
+    z-index: 3
+    img
+        width: 250px
+        margin-left: 60px
+    .navStyle
+        a
+            margin-left: 5px
+            font-weight: bold
+            @include styleLinks('normal', $secondColor)
+            &:hover
+                @include styleLinks('hover', $altColor)
+        .on 
+            @include styleLinks('hover', $altColor)
+        button
+            margin-right: 15px
+            @include styleButton('blue',  $altColor , $mainColor)
+        img 
+            width: 60px
+
+
+
+/*styleing div1 */
+.div1
+    position: relative
+    top: 200px
+    display: flex
+    width: 95%
+    margin-right: 40px
+    div
+        width: 15%
+        padding: 0px
+        margin-right: 10px
+        img
+            width: 100%
+            border-radius: 48%
+    #d1
+        border: 2px dashed #02598B
+
+.div2
+    position: relative
+    top: 200px
+    display: flex
+    width: 100%
+    padding: 20px
+    font-weight: bold
+    font-size: $fontSize
+    .info , .im 
+        width: 50%
+        .img1
+            width: 35%
+            height: 25%
+            margin-top: 30px
+            margin-bottom: 20px
+    .im 
+        img
+            width: 100%
+            margin-top: 60px
+            margin-bottom: 100px
+    .info
+        img
+            width: 80%
+            margin-right: 30px
+            margin-top: 40px
+        .h41
+            text-align: left
+            margin-top: 80px
+            margin-left: 20px
+    p   
+        width: 85%
+    span
+        color: $altColor
+    h4, h5
+        color: $altColor
+        font-weight: bold
+    ul li
+        font-size: $fontSize
+
+
+/*style div4*/
+.div4
+    position: relative
+    top: 200px
+    >div
+        font-weight: bold
+        margin: 40px 60px
+    form
+        width: 50%
+        margin-right: 50px
+        padding: 5px
+        .btn
+            background-color: #026a90
+            width: 150px
+            color: white
+        >div    
+            display: flex
+            >div 
+                width: 50%
+            span
+                margin-right: 30px
+
+
+/*style footer*/
+footer
+    position: relative
+    top: 230px
+    background-color: $secondColor
+    color: #c8c2c5
+    .container
+        margin: auto
+        display: flex
+        justify-content: space-evenly
+        .col1
+            width: 32%
+            img
+                width: 190px
+            div
+                a
+                    text-decoration: none
+                img
+                    margin-right: 10px
+                    width: 30px
+        
+        .col2 , .col4
+            margin-right: 20px
+            width: 32%
+            h2
+                margin-top: 80px
+                width: 250px
+                padding-bottom: 10px
+                border-bottom: 3px solid $altColor
+            ul
+                margin-top: 50px
+                list-style-type: none
+                a
+                    @include styleLinks('normal', gray)
+                    
+                    &:hover
+                        @include styleLinks('hover', $mainColor)
+        
+        .col4
+            ul > li > span
+                color: $altColor
+    @media(max-width:767px)
+        top: 900px
+    @media(min-width:768px) and (max-width:991px)
+        top: 300px

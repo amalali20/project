@@ -1,0 +1,179 @@
+* {
+  direction: rtl;
+  margin: 0px;
+}
+
+/* Styleing navbar */
+header {
+  width: 100%;
+  height: 25vb;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 5px 5px 15px gray;
+  z-index: 3;
+}
+header img {
+  width: 250px;
+  margin-left: 60px;
+}
+header .navStyle a {
+  margin-left: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+header .navStyle a:hover {
+  text-decoration: underline;
+  color: #02598B;
+}
+header .navStyle .on {
+  text-decoration: underline;
+  color: #02598B;
+}
+header .navStyle button {
+  margin-right: 15px;
+  border-radius: 5px;
+  width: 150px;
+  padding: 10px;
+  border: none;
+  background-color: #02598B;
+  color: white;
+}
+header .navStyle img {
+  width: 60px;
+}
+
+.head {
+  position: relative;
+  width: 100%;
+  top: 180px;
+}
+.head > div {
+  width: 40%;
+  font-size: 30px;
+  margin-right: 10px;
+  font-weight: bold;
+  color: #02598B;
+  padding-right: 50px;
+}
+
+/*style sec1*/
+.container {
+  position: relative;
+  top: 200px;
+  width: 100%;
+}
+.container .div1 {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+}
+.container .div1 a {
+  text-decoration: none;
+  margin-right: 10%;
+  border-radius: 5px;
+  width: 150px;
+  padding: 10px;
+  border: none;
+  background-color: #02598B;
+  color: white;
+  padding: 7px 25px;
+}
+.container .div1 div {
+  width: calc(50% - 5px);
+  position: relative;
+}
+.container .div1 div h4, .container .div1 div h6 {
+  color: #02598B;
+  font-weight: bold;
+}
+.container .div1 div img {
+  width: 95%;
+}
+.container .div1 div img:hover {
+  transform: scale(1.15);
+}
+.container .div1 div p {
+  width: calc(95% - 5px);
+}
+@media (min-width: 992px) {
+  .container .div2 {
+    position: absolute;
+    right: 52%;
+  }
+  .container .img1 {
+    position: absolute;
+    left: 52%;
+  }
+}
+@media (max-width: 991px) {
+  .container .div1 {
+    flex-direction: column;
+  }
+  .container .div1 div, .container .div1 .div2, .container .div1 .img1 {
+    width: 100%;
+  }
+}
+
+/*Styleing footer*/       
+.contain {
+  position: relative;
+  top: 300px;
+  color: #c8c2c5;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.contain .col1 {
+  width: 32%;
+}
+.contain .col1 img {
+  width: 190px;
+}
+.contain .col1 div a {
+  text-decoration: none;
+}
+.contain .col1 div img {
+  margin-right: 10px;
+  width: 30px;
+}
+.contain .col2, .contain .col4 {
+  margin-right: 20px;
+  width: 32%;
+}
+.contain .col2 h2, .contain .col4 h2 {
+  margin-top: 80px;
+  width: 250px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #02598B;
+}
+.contain .col2 ul, .contain .col4 ul {
+  margin-top: 50px;
+  list-style-type: none;
+}
+.contain .col2 ul a, .contain .col4 ul a {
+  text-decoration: none;
+  color: gray;
+}
+.contain .col2 ul a:hover, .contain .col4 ul a:hover {
+  text-decoration: underline;
+  color: white;
+}
+.contain .col4 ul > li > span {
+  color: #02598B;
+}
+@media (max-width: 991) {
+  .contain {
+    top: 300px;
+  }
+}
+
+/*# sourceMappingURL=cli.css.map */

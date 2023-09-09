@@ -1,0 +1,37 @@
+
+// style button
+@mixin styleButton ($stylebtn, $altColor, $mainColor)
+    border-radius: 5px
+    width: 150px
+    padding: 10px
+    border: none
+    @if $stylebtn == 'blue'
+        background-color: $altColor
+        color: $mainColor
+
+
+    @else if  $stylebtn == 'white'
+        background-color: $mainColor
+        color: $altColor
+
+
+
+// style link
+@mixin styleLinks($style , $mainColor)
+    @if $style == 'normal'
+        text-decoration: none
+        color: $mainColor
+
+    @else if $style == 'hover' 
+        text-decoration: underline
+        color: $mainColor
+
+
+// image of cards
+@mixin styleimge($styleIM)
+    
+    @if $styleIM == 'normal'
+        margin:  7px 10%
+        width: auto
+    @else if $styleIM == 'hover'
+        transform: scale(1.1)

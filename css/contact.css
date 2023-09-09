@@ -1,0 +1,168 @@
+* {
+  direction: rtl;
+}
+
+/* Styleing navbar */
+header {
+  width: 100%;
+  height: 25vb;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 5px 5px 15px gray;
+  z-index: 3;
+}
+header img {
+  width: 250px;
+  margin-left: 60px;
+}
+header .navStyle a {
+  margin-left: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+header .navStyle a:hover {
+  text-decoration: underline;
+  color: #02598B;
+}
+header .navStyle .on {
+  text-decoration: underline;
+  color: #02598B;
+}
+header .navStyle button {
+  margin-right: 15px;
+  border-radius: 5px;
+  width: 150px;
+  padding: 10px;
+  border: none;
+  background-color: #02598B;
+  color: white;
+}
+header .navStyle img {
+  width: 60px;
+}
+
+/*style main section*/
+.sec1 {
+  position: relative;
+  top: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.sec1 form {
+  width: calc(50% - 20px);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px gray;
+  font-size: 18px;
+  color: #02598B;
+  font-weight: bold;
+}
+.sec1 form table tr td span {
+  margin-right: 70px;
+  font-size: 15px;
+}
+.sec1 form .btns {
+  margin-top: 15px;
+  background-color: #026a90;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+}
+.sec1 .contact {
+  width: calc(50% - 30px);
+  padding: 10px;
+}
+.sec1 .contact h4 {
+  font-weight: bold;
+  color: #02598B;
+  margin-bottom: 40px;
+}
+.sec1 .contact > div {
+  width: 90%;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 3px gray;
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.sec1 .contact > div i {
+  color: #02598B;
+}
+.sec1 .contact > div p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #02598B;
+}
+
+/*style footer*/
+footer {
+  position: relative;
+  top: 300px;
+  background-color: rgb(24, 24, 24);
+  color: #c8c2c5;
+}
+footer .container {
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .container .col1 {
+  width: 32%;
+}
+footer .container .col1 img {
+  width: 190px;
+}
+footer .container .col1 div a {
+  text-decoration: none;
+}
+footer .container .col1 div img {
+  margin-right: 10px;
+  width: 30px;
+}
+footer .container .col2, footer .container .col4 {
+  margin-right: 20px;
+  width: 32%;
+}
+footer .container .col2 h2, footer .container .col4 h2 {
+  margin-top: 80px;
+  width: 250px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #02598B;
+}
+footer .container .col2 ul, footer .container .col4 ul {
+  margin-top: 50px;
+  list-style-type: none;
+}
+footer .container .col2 ul a, footer .container .col4 ul a {
+  text-decoration: none;
+  color: gray;
+}
+footer .container .col2 ul a:hover, footer .container .col4 ul a:hover {
+  text-decoration: underline;
+  color: white;
+}
+footer .container .col4 ul > li > span {
+  color: #02598B;
+}
+@media (max-width: 767px) {
+  footer {
+    top: 900px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  footer {
+    top: 300px;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,176 @@
+// import mixins
+@use './mixins/__mx.sass' as *
+
+$style :''
+$mainColor: white
+$altColor: #02598B
+$secondColor: black
+$fontSize: 18px
+
+*
+    direction: rtl
+
+/* Styleing navbar */
+header
+    width:100%
+    height: 25vb
+    background-color: $mainColor
+    position: fixed
+    top: 0px
+    font-size: $fontSize
+    display: flex
+    justify-content: space-around
+    box-shadow: 5px 5px 15px gray
+    z-index: 3
+    img
+        width: 250px
+        margin-left: 80px
+    .navStyle
+        a
+            font-weight: bold
+            @include styleLinks('normal', $secondColor)
+            &:hover
+                @include styleLinks('hover', $altColor)
+        .on
+             @include styleLinks('hover', $altColor)
+        button
+            margin-right: 10px
+            @include styleButton('blue',  $altColor , $mainColor)
+        img 
+            width: 60px
+
+/*style top part*/
+.im 
+    width: 100%
+    position: relative
+    top: 150px
+    
+    background-size: 100%
+    background-repeat: no-repeat
+    margin-bottom: 80px
+    p 
+        color: $mainColor
+        font-size: 23px
+        font-weight: bold
+        width: 30%
+        padding-top:90px
+        margin-right: 43%
+    @media(max-width: 991px)
+        p 
+            width: 50%
+/*type button all*/
+.div3
+    position: fixed
+    top: 170px
+    width: 10%
+    margin-right: 88%  
+    margin-bottom: 50px
+    background-color: $altColor
+    color: $mainColor
+    height: fit-content
+    z-index: 5
+   
+    h4
+        text-align: center
+        margin: 0px
+        padding: 7px
+        cursor: pointer
+        font-weight: bold
+
+/**/
+main 
+    position: relative
+    top: 150px
+    width: 100%
+    .divs
+        width: calc(100%)
+        display: flex
+        justify-content: space-evenly
+        .div1
+            position: fixed
+            top: 200px
+            right: 20px
+            width: calc(16%)
+            background-color: #eee
+            box-shadow: -3px 1px  3px $altColor
+            height: fit-content
+            margin: 0px
+            >p
+                text-align: center
+                margin: 0px
+                padding: 10px
+                border-bottom: 1px solid gray
+                cursor: pointer
+                font-weight: bold
+                &:hover
+                    background-color: #47A6D8
+                    color: $mainColor
+
+        .div2
+            width: 80%
+            margin: 0px
+            margin-right: 160px
+            .row
+                display:flex
+                justify-content: space-evenly
+                margin-bottom: 30px
+                width: 99%
+                h5
+                    color: $altColor
+                p 
+                    font-weight: bold
+                    font-size: 15px
+                .card
+                    width: 24%
+                    img
+                        width: 100%
+                        height: 160px
+
+
+
+/*Styleing footer*/       
+footer
+    position: relative
+    top: 500px
+    background-color: $secondColor
+    color: #c8c2c5
+    .container
+        
+        margin: auto
+        display: flex
+        justify-content: space-evenly
+        .col1
+            width: 32%
+            img
+                width: 190px
+            div
+                a
+                    text-decoration: none
+                img
+                    margin-right: 10px
+                    width: 30px
+        
+        .col2 , .col4
+            margin-right: 20px
+            width: 32%
+            h2
+                margin-top: 80px
+                width: 250px
+                padding-bottom: 10px
+                border-bottom: 3px solid $altColor
+            ul
+                margin-top: 50px
+                list-style-type: none
+                a
+                    @include styleLinks('normal', gray)
+                    
+                    &:hover
+                        @include styleLinks('hover', $mainColor)
+        
+        .col4
+            ul > li > span
+                color: $altColor
+    @media(max-width:767px)
+        top: 900px
+    @media(min-width:768px) and (max-width:991px)
+        top: 300px
