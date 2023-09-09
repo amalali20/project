@@ -95,28 +95,11 @@ var b1 , b2, b3, b4, b5 ;
 function validateName()
 {  b1=false;
     var Uname = document.getElementById("useName").value;
-    var bool = 0,n=0,
-    i=0 ;
-    while(i < Uname.length)
-    {  if((Uname[i]>='a' && Uname[i]<='z') || (Uname[i]>='A' && Uname[i]<='Z'))
-        {
-            bool++;
-        }
-        else{
-            n++;
-        }
-        i++;
-    }
-
+    var bool = 0,n=0;
 
     if( Uname.length == 0)
     {
         document.getElementsByClassName("errorSpan")[0].innerHTML = "ادخل اسمك !!";
-    }
-    else if(n > 0)
-    {
-        document.getElementsByClassName("errorSpan")[0].innerHTML = "لا يمكن كتابه رقم مع الاسم";
-
     }
     else{
         document.getElementsByClassName("errorSpan")[0].innerHTML = "<i class='fa fa-check ' ></i>";
